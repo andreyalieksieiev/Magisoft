@@ -1,0 +1,358 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, button, input, textarea
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+  font-family: 'Roboto'
+  box-sizing: border-box
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+nav ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote
+  &:before, &:after
+    content: ''
+    content: none
+
+q
+  &:before, &:after
+    content: ''
+    content: none
+
+a
+  margin: 0
+  padding: 0
+  font-size: 100%
+  vertical-align: baseline
+  background: transparent
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+h1
+  font-weight: inherit
+
+button, input, textarea
+  font-family: inherit
+  color: inherit
+
+*
+  box-sizing: inherit
+  outline: none
+
+  &:before, &:after
+    box-sizing: inherit
+    outline: none
+
+body
+  line-height: 1
+  font-weight: 400
+  font-style: normal
+  text-rendering: optimizeLegibility
+  font-family: 'Roboto', sans-serif
+  font-size: 15px
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  box-sizing: border-box
+  background-color: hsl(0, 0%, 100%)
+  color: #131414
+  width: 100%
+  min-width: 320px
+  overflow: auto !important
+  min-width: auto !important
+
+.wrapper
+  max-width: 1440px
+  margin: 0 auto
+  background: #FFFFFF
+
+.block-header
+  max-width: 100%
+  height: auto
+  max-height: 600px
+  display: block
+  background: url(../img/img.jpg) no-repeat
+  background-size: cover
+
+.block-header__container
+  max-width: 1140px
+  margin: 0 0 0 150px
+  display: flex
+
+.block-header__img
+  margin-left: 98px
+  margin-top: 171px
+
+.block-header__text
+  max-width: 436px
+  min-height: 72px
+  font-weight: normal
+  font-size: 24px
+  line-height: 36px
+  color: #FFFFFF
+  margin: 18px 0 10px 98px
+
+.block-header__items
+  margin-left: 98px
+  width: 181px
+  height: 50px
+  display: flex
+  justify-content: space-between
+
+.block-header__item
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  cursor: pointer
+  display: flex
+  justify-content: center
+  align-items: center
+  background: #000000
+  opacity: 0.6
+
+  &:hover
+    background: #2ECC71
+
+.block-header__item-phone
+  width: 439px
+  height: 507px
+  margin-top: 91px
+  margin-left: 119px
+  margin-right: 100px
+
+/*     main
+
+.block-main
+  min-height: 338px
+
+.block-main__container
+  max-width: 1140px
+  min-height: 238px
+  margin: 50px auto
+  display: flex
+  justify-content: space-between
+
+.block-main__item
+  max-width: 332px
+  height: 100%
+
+.block-main__img
+  width: 120px
+  height: 120px
+  background: #2ECC71
+  border-radius: 50%
+  margin-left: 100px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.block-main__text
+  max-width: 154px
+  height: 26px
+  font-weight: bold
+  font-size: 22px
+  line-height: 26px
+  margin: 20px auto
+  text-align: center
+  color: #111111
+
+.block-main__text-3
+  width: 211px
+  height: 26px
+  font-weight: bold
+  font-size: 22px
+  line-height: 26px
+  margin: 20px auto
+  text-align: center
+  color: #111111
+
+.block-main__text-style
+  font-size: 16px
+  line-height: 26px
+  text-align: center
+  color: #696969
+
+/*   block-video
+
+.block-video
+  height: 430px
+  background: #DAE0E5
+  border: 1px solid #DAE0E5
+
+.block-video__container
+  max-width: 1140px
+  margin: 60px 150px
+  display: flex
+  justify-content: space-between
+
+.block-video__left
+  min-height: 225px
+  max-width: 497px
+  margin: 28px auto
+
+.block-video__text-1
+  height: 26px
+  width: 284px
+  margin-top: 0px
+  font-weight: bold
+  font-size: 22px
+  text-align: center
+  color: #111111
+
+.block-video__text-2
+  max-width: 497px
+  min-height: 104px
+  margin: 20px auto
+  font-size: 16px
+  line-height: 26px
+  color: #696969
+
+.block-video__UI
+  width: 400px
+  height: 55px
+  display: flex
+
+.block-video__UI-input
+  width: 279px
+  height: 49px
+  background: #FFFFFF
+  border: 1px solid #B7B7B7
+  padding-left: 30px
+  border-top-left-radius: 15px
+  border-bottom-left-radius: 15px
+  font-size: 18px
+  line-height: 26px
+  color: #111111
+
+.block-video__UI-button
+  width: 121px
+  height: 49px
+  border-bottom-right-radius: 15px
+  border-top-right-radius: 15px
+  background: #2ECC71
+  font-weight: bold
+  font-size: 22px
+  line-height: 26px
+  text-align: center
+  color: #FFFFFF
+
+.block-video__right
+  height: 310px
+  width: 500px
+  margin: 0 auto
+
+/*  block-slider
+
+.block-slider__container
+  max-width: 1085px
+  margin: 20px auto
+
+.block-slider__header-text
+  max-width: 820px
+  margin: 0 auto
+  font-style: italic
+  font-size: 18px
+  line-height: 30px
+  color: #696969
+  padding: 0 15px
+
+.block-slider__text-item-1
+  width: 70px
+  height: 26px
+  margin: 20px auto
+  font-weight: bold
+  font-size: 18px
+  line-height: 26px
+  color: #111111
+
+.block-slider__img
+  height: 110px
+  max-width: 960px
+  margin: 20px auto
+  padding: 0 20px
+
+  img
+    height: 60px
+    width: 60px
+    margin-left: 5px
+    position: relative
+
+.block-slider__text-item-2
+  max-width: 231px
+  margin: 0 auto
+  font-weight: bold
+  font-size: 24px
+  line-height: 26px
+  color: #111111
+
+.block-slider__text-item-3
+  max-width: 488px
+  margin: 20px auto
+  font-size: 16px
+  line-height: 26px
+  color: #696969
+  padding: 0 15px
+
+.block-slider__icons
+  height: 35px
+  width: 260px
+  margin: 30px auto
+  cursor: pointer
+  display: flex
+  justify-content: space-between
+
+.block-slider__icon
+  width: 35px
+  height: 35px
+  border-radius: 50%
+  background: #C4C4C4
+  display: flex
+  align-items: center
+  justify-content: center
+
+  &:hover
+    background: #2ECC71
+
+.slick-slide:hover
+  opacity: 0.8
+  cursor: pointer
+  box-shadow: inset 0 0 0 23px #2ECC71
+
+/*   footer
+
+.footer
+  min-height: 106px
+  background: #DAE0E5
+  border: 1px solid #DAE0E5
+
+.nav-bottom
+  max-width: 565px
+  margin: 40px auto
+  display: flex
+  justify-content: space-around
+
+.nav-bottom__item
+  list-style: none
+
+  a
+    font-size: 16px
+    line-height: 26px
+    text-decoration: none
+    color: #696969
+
+    &:hover
+      text-decoration: underline

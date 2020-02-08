@@ -1,0 +1,29 @@
+@media (max-width:768px){
+  .block-header__text {
+    font-size: 22px;
+  }
+
+  .block-video__text-1 {
+    margin: 0px auto;
+  }
+
+  .block-video__text-2 {
+    margin: 15px auto;
+    font-size: 15px;
+    padding: 5%;
+  }
+
+  .block-video__UI {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .block-video__right {
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .block-main__text-style {
+    padding: 0 15px;
+  }
+}
